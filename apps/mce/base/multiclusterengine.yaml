@@ -3,5 +3,7 @@ kind: MultiClusterEngine
 metadata:
   name: engine
   namespace: stolostron-engine
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"  # Create after operator is installed
 spec:
   targetNamespace: stolostron-engine

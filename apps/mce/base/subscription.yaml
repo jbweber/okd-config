@@ -3,6 +3,8 @@ kind: Subscription
 metadata:
   name: stolostron-engine
   namespace: stolostron-engine
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"  # Create after namespace
 spec:
   channel: community-0.8
   name: stolostron-engine
