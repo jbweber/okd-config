@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: stolostron-engine
 
 resources:
+  - namespace.yaml
   - operatorgroup.yaml
   - subscription.yaml
   - multiclusterengine.yaml
