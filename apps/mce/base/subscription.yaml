@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: stolostron-engine
+  namespace: stolostron-engine
+spec:
+  channel: community-0.8
+  name: stolostron-engine
+  source: community-operators
+  sourceNamespace: openshift-marketplace
+  installPlanApproval: Automatic
