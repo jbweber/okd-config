@@ -1,9 +1,10 @@
 apiVersion: multicluster.openshift.io/v1
 kind: MultiClusterEngine
 metadata:
-  name: engine
-  namespace: stolostron-engine
+  name: multiclusterengine
+  namespace: multicluster-engine
   annotations:
-    argocd.argoproj.io/sync-wave: "2"  # Create after operator is installed
+    argocd.argoproj.io/sync-wave: "3"
 spec:
-  targetNamespace: stolostron-engine
+  targetNamespace: multicluster-engine
+  availabilityConfig: Basic  # Use "High" for HA in production
