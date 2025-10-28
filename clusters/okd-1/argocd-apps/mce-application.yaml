@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/jbweber/okd-config'  # Update this
+    repoURL: 'https://github.com/jbweber/okd-config'
     targetRevision: main
     path: apps/mce/overlays/okd-1
   destination:
@@ -18,8 +18,6 @@ spec:
     automated:
       prune: true
       selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
     retry:
       limit: 5
       backoff:
